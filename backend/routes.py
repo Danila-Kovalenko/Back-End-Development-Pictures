@@ -80,7 +80,7 @@ def update_picture(id):
     for index, picture in enumerate(data):
         if picture["id"] == id:
             data[index] = picture_in
-            return picture, 201
+            return picture_in, 200
 
     return {"message": "picture not found"}, 404
 
