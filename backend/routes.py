@@ -60,7 +60,7 @@ def create_picture():
     picture_in = request.json
     print(picture_in)
 
-    # if the id is already there, return 303 with the URL for the resource
+    # if the id is already there, return HTTP 302 with the URL for the resource
     for picture in data:
         if picture_in["id"] == picture["id"]:
             return {
